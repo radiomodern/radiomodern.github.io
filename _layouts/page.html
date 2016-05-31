@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+
+<div id="content_wrap">
+    <div id="tcontent">
+        <table>
+            <tr>
+                <td valign=top>
+                    <article id="content">
+                        <header id="title">
+                            <img src="/images/astra.gif" class="title">&nbsp;<h1>{{page.title}}</h1>
+                        <span id="btn">
+                            <a class="soc" href="http://twitter.com/intent/tweet?lang=ru&url={{ site.url + page.url }}"
+                               title="Опубликовать ссылку на страницу в Twitter"
+                               onclick="window.open(this.href, 'Опубликовать ссылку на страницу в Twitter', 'width=500,height=300'); return false">
+                                <img src="/images/bg-icon-twitter.png" alt="twitter"/></a>
+                            <a class="soc" href="http://vkontakte.ru/share.php?url={{ site.url + page.url }}"
+                               title="Опубликовать ссылку на страницу в ВКонтакте"
+                               onclick="window.open(this.href, 'Опубликовать ссылку на страницу в Вконтакте', 'width=500,height=300'); return false">
+                                <img src="/images/bg-icon-vkontakte.png" alt="vk.com"/></a>
+                            <a class="soc" href="http://www.facebook.com/sharer.php?u={{ site.url + page.url }}"
+                               title="Опубликовать ссылку на страницу в Facebook"
+                               onclick="window.open(this.href, 'Опубликовать ссылку на страницу в Facebook', 'width=500,height=300'); return false">
+                                <img src="/images/bg-icon-facebook.png" alt="facebook"/></a>
+                        </span>
+                        </header>
+                        <div id="text">
+                            {{content}}
+                        </div>
+                    </article>
+                </td>
+                <td valign=top>
+                    <div id="sidebar"><a class="megatema" href="/onair/">Слушать Радио!</a>
+                        <div id="right_menu">
+                            {% if page.collection %}
+                            <!-- ************* МЕНЮ НАВИГАЦИИ ************* -->
+                            <div style="position:relative">
+                                {% for item in site[page.collection] %}
+                                {% assign css_class = 'first_inactive' %}
+                                {% if item.url == page.url %}
+                                {% assign css_class = 'first_active' %}
+                                {% endif %}
+                                <ul>
+                                    <li>
+                                        <a class="{{ css_class }}" target="_self" href="{{item.url}}">{{item.link}}</a>
+                                    </li>
+                                </ul>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                        </div>
+
+                        <!-- VK Widget -->
+                        <div id="vk_groups"></div>
+                        <script type="text/javascript">
+                            VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "390", color1: 'FFFFFF', color2: '#EB3C2A', color3: '#E34F3F'}, 183203);
+                        </script>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

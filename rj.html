@@ -1,0 +1,20 @@
+---
+layout: page
+title: Ведущие
+link: Ведущие
+permalink: /rj/
+position: 2
+collection: rj
+---
+
+<div class="rjs">
+    {% for rj in site.rj | sort:position %}
+    <div class="rj">
+        <a href="{{rj.url}}">
+            <img src="{{rj.picture}}" alt="{{rj.link}}">
+
+            {{ rj.title }}
+        </a>
+    </div>
+    {% endfor %}
+</div>
