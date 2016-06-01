@@ -7,7 +7,8 @@
         <!-- ************* ВЕРХНЕЕ МЕНЮ ************* -->
         <table width=height="38">
             <tr>
-                {% for m_page in site.pages | sort:'position' %}
+                {% assign pages = site.pages | sort: 'position' %}
+                {% for m_page in pages %}
                 {% if m_page.title %}
                 {% assign current = 'topmenu' %}
                 {% if page.collection == m_page.collection %}
