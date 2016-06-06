@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic);
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
@@ -262,6 +262,7 @@ A.megatema {
 }
 
 #right_menu {
+  font-size: 12px;
   width: 100%;
   padding: 15px;
   padding-left: 0;
@@ -615,25 +616,6 @@ A.page_navigation:hover, A.page_navigation, .page_navigation {
   font-size: 10px;
 }
 
-
-/*________________________ Модуль "Гостевая книга" ________________________*/
-#guest_pop {
-  margin: 5px;
-  text-align: left;
-}
-
-.guest_tableborder {
-  background-color: #CDCDCD;
-  padding: 0px;
-  border: 0px solid #878373;
-}
-
-.guest_info_meta {
-  background-color: #FAFAFA;
-  padding: 8px;
-}
-
-
 .mini {
   color: #333;
   font-size: 11px;
@@ -643,247 +625,6 @@ A.page_navigation:hover, A.page_navigation, .page_navigation {
   background-color: #E34F3F;
   color: #FFF;
   border: 1px solid #E34F3F;
-}
-
-/*_______________________ Модуль "Профиль" _______________________*/
-#userpage {
-}
-
-.mod_userpage_border_profil {
-  border: 1px solid #E8E7E3;
-  width: 420px;
-  height: 180px;
-  text-align: left;
-}
-
-.mod_userpage_border {
-  border: 1px solid #E8E7E3;
-  width: 240px;
-}
-
-.mod_userpage_header {
-  padding: 8px;
-  margin: 8px;
-  background: #EEEEEE;
-}
-
-.mod_userpage_content {
-  padding: 8px;
-  margin: 8px;
-}
-
-.mod_userpage_right {
-  float: right;
-  margin-top: -12px;
-  vertical-align: top;
-}
-
-.mod_userpage_profil {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin-left: 200px;
-  margin-top: 15px;
-}
-
-.mod_userpage_avatar {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin-left: 50px;
-  margin-top: -140px;
-}
-
-.mod_userpage_border_guestbook {
-  border: 1px solid #E8E7E3;
-  width: 420px;
-  text-align: left;
-}
-
-.mod_userpage_h1 {
-  margin-right: 5px;
-  margin-left: -5px;
-  color: #CCCCCC;
-}
-
-.mod_userpage_top {
-  border-bottom: 1px dotted #CCCCCC;
-  margin-bottom: 5px;
-  color: #999;
-}
-
-.mod_userpage_del {
-  float: right;
-  vertical-align: top;
-}
-
-.mod_userpage_border_myprofile {
-  border: 1px solid #E8E7E3;
-  width: 90%;
-  height: auto;
-  text-align: left;
-}
-
-.mod_userpage_first {
-  background-color: #F1F1F1;
-}
-
-.mod_userpage_second {
-  background-color: #FAFAFA;
-}
-
-/*________________________ Модуль "DOWNLOAD" ________________________*/
-#mod_download {
-}
-
-#mod_download H1 {
-}
-
-#mod_download A:link, #mod_download A:visited {
-  text-decoration: underline;
-}
-
-#mod_download A:hover {
-  text-decoration: none;
-}
-
-#mod_download .download_categ, #mod_download A.download_categ:link, #mod_download A.download_categ:visited {
-}
-
-#mod_download A.download_categ:hover {
-}
-
-#mod_download A.mod_download_navi:link, #mod_download A.mod_download_navi:visited {
-  color: #DEA407;
-  text-decoration: none;
-}
-
-#mod_download A.mod_download_navi:hover {
-  color: #000000;
-  text-decoration: none;
-}
-
-#mod_download A.mod_download_ajsearch:link, #mod_download A.mod_download_ajsearch:visited {
-  color: #000;
-  text-decoration: none;
-  display: block;
-}
-
-#mod_download A.mod_download_ajsearch:hover {
-  background-color: #B4B4B4;
-  color: #FFF;
-  text-decoration: none;
-  display: block;
-}
-
-.mod_download_topnav {
-  border: 1px solid #E8E7E3;
-  padding: 4px;
-  margin-bottom: 8px;
-}
-
-.mod_download_ajaxsearchcontainer {
-  background-color: #B4B4B4;
-  padding: 5px;
-}
-
-.mod_download_ajaxsearchcontainer_td {
-  background-color: #B4B4B4;
-  color: #FFF;
-}
-
-.mod_download_ajaxsearchdiv {
-  background-color: #FFF;
-  padding: 0px;
-  width: 232px;
-  position: absolute;
-  border: 1px solid #000;
-  border-top: 1px solid #999;
-}
-
-.mod_download_ajaxsearch_info {
-  background-color: #EAEAEA;
-  padding: 5px;
-}
-
-.mod_download_ajaxsearchfield {
-  width: 230px;
-}
-
-.mod_download_topheader {
-  background-color: #B4B4B4;
-  color: #FFF;
-  padding: 4px;
-}
-
-.mod_download_dlbox {
-  border: 1px solid #FFF;
-  padding: 2px;
-}
-
-.mod_download_spacer {
-  border-bottom: 1px solid #CCC5AF;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.mod_download_commentbox {
-  background-color: #FCFAF2;
-  border: 1px solid #CCC5AF;
-  padding: 5px;
-  height: 150px;
-  overflow: auto;
-}
-
-.mod_download_commenterror {
-  font-weight: bold;
-  font-style: italic;
-}
-
-#mod_download A.mod_download_sort:link, #mod_download A.mod_download_sort:visited {
-  color: #FFF;
-  text-decoration: underline;
-}
-
-#mod_download A.mod_download_sort:hover {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.mod_download_titlebar {
-  font-weight: bold;
-  border-top: 1px solid #B4B4B4;
-  border-bottom: 1px solid #B4B4B4;
-  background-color: #EAEAEA;
-  padding: 5px;
-}
-
-.mod_download_nospam {
-  color: #F00;
-}
-
-.dl_nt_first {
-  background-color: #FFF;
-  padding: 5px;
-  border-bottom: 1px solid #FFF;
-}
-
-.dl_nt_second {
-  background-color: #EAEAEA;
-  padding: 5px;
-  border-bottom: 1px solid #FFF;
-}
-
-.dl_first {
-  background-color: #FFF;
-  padding: 4px;
-  border: 1px solid #CCC5AF;
-}
-
-.dl_second {
-  background-color: #EAEAEA;
-  padding: 4px;
-  border: 1px solid #CCC5AF;
 }
 
 .tablemenu {
