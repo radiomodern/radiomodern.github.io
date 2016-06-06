@@ -1,11 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic);
 
-BODY {
+html {
+  font-size: 16px;
+}
+
+body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Helvetica, Arial, sans-serif, Tahoma;
-  font-size: 12px;
-  color: #42423D;
+  font-size: 1em;
+  color: #424242;
   text-align: left;
 }
 
@@ -302,7 +306,7 @@ A.megatema {
   padding-left: 17px;
   display: block;
   color: #FFF;
-  background: #B3B897 url(/images/nav_akt.gif) no-repeat 5px 12px;
+  background: #B3B897;
   text-decoration: none;
 }
 
@@ -311,7 +315,7 @@ A.megatema {
   padding-left: 17px;
   display: block;
   color: #FFF;
-  background: #B3B897 url(/images/nav_akt.gif) no-repeat 5px 12px;
+  background: #B3B897;
   text-decoration: none;
   border-bottom: 1px solid #FFF;
 }
@@ -415,33 +419,6 @@ H3 {
   font-weight: normal;
 }
 
-#loginform {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #FFF;
-  border: 1px solid #DDD;
-}
-
-#loginform .loginfield {
-  padding: 3px;
-  border: 1px solid #DDD;
-  color: #EC3D2B;
-  margin-bottom: 5px;
-  margin-top: 2px;
-}
-
-/*loginform .button*/
-#INVALID-RULE {
-  border: 1px solid #E34F3F;
-  color: #FFF;
-  background-color: #E34F3F;
-}
-
-/*#loginform loginform a:hover*/
-#INVALID-RULE {
-  text-decoration: underline;
-}
-
 .code_inline, .code_block {
   font-size: 10px;
 }
@@ -531,30 +508,6 @@ A.page_navigation:hover, A.page_navigation, .page_navigation {
   border: 1px solid #DDD;
 }
 
-#module_header {
-  padding: 5px;
-  background: #FFF url(/images/header.gif) repeat-x right 0;
-  height: 30px;
-}
-
-#module_header H2, H3, H4 {
-  font-size: 17px;
-  display: inline;
-}
-
-#module_content {
-  padding: 5px;
-}
-
-#module_content .formleft, .formright {
-  font-style: normal;
-  line-height: 1.5em;
-  margin-bottom: 5px;
-}
-
-#module_content EM {
-  font-style: italic;
-}
 
 .button {
   background-color: #E34F3F;
@@ -641,31 +594,6 @@ A.page_navigation:hover, A.page_navigation, .page_navigation {
   color: #E34F3F;
 }
 
-/*_______________________ Модуль "Галерея"  _______________________*/
-.mod_gal_imgcontainer {
-  float: left;
-  padding: 0;
-  border: 1px solid #DDD;
-  margin: 3px;
-}
-
-.mod_gal_header {
-  color: #333;
-  background-color: #F4F4F4;
-  padding: 5px;
-  border-bottom: 1px solid #DDD;
-}
-
-.mod_gal_img {
-  padding: 10px;
-}
-
-.mod_gal_kbsize {
-  color: #999;
-  text-align: center;
-  margin-top: 3px;
-}
-
 /*_______________________ Модуль "Комментарии"  _______________________*/
 .mod_comment_header {
   color: #666;
@@ -687,174 +615,6 @@ A.page_navigation:hover, A.page_navigation, .page_navigation {
   font-size: 10px;
 }
 
-/*_______________________ Модуль "Новостной архив"  _______________________*/
-.arc_header TD A {
-  color: #777;
-  background-color: #F5F5F5;
-  text-decoration: underline;
-  padding: 5px;
-  display: block;
-}
-
-.arc_header TD A:hover {
-  color: #FFF;
-  background-color: #EB3C2A;
-  text-decoration: none;
-}
-
-/*________________________ Модуль "Карта проектов" ________________________*/
-TABLE.progress {
-  width: 650px;
-  height: 25px;
-  border: 1px solid #D7D7D7;
-  border-collapse: collapse;
-  border-spacing: 0;
-  float: left;
-  margin: 0;
-  padding: 0;
-  empty-cells: show;
-}
-
-TABLE.progress TD.closed {
-  background: #53A622;
-}
-
-TABLE.progress TD :hover {
-  background: none;
-}
-
-.dl_a_1 {
-  background: #FDC;
-  border-color: #E88;
-  color: #A22;
-  padding: 5px;
-}
-
-.dl_b_1 {
-  background: #FED;
-  border-color: #E99;
-  color: #A22;
-  padding: 5px;
-}
-
-.dl_a_2 {
-  background: #FFB;
-  border-color: #EEA;
-  color: #880;
-  padding: 5px;
-}
-
-.dl_b_2 {
-  background: #FFD;
-  border-color: #DD8;
-  color: #880;
-  padding: 5px;
-}
-
-.dl_a_3 {
-  background: #FBFBFB;
-  border-color: #DDD;
-  color: #444;
-  padding: 5px;
-}
-
-.dl_b_3 {
-  background: #F6F6F6;
-  border-color: #CCC;
-  color: #333;
-  padding: 5px;
-}
-
-.dl_a_4 {
-  background: #E7FFFF;
-  border-color: #CEE;
-  color: #099;
-  padding: 5px;
-}
-
-.dl_b_4 {
-  background: #DFF;
-  border-color: #BEE;
-  color: #099;
-  padding: 5px;
-}
-
-.dl_a_5 {
-  background: #E7EEFF;
-  border-color: #CDE;
-  color: #469;
-  padding: 5px;
-}
-
-.dl_b_5 {
-  background: #DDE7FF;
-  border-color: #CDE;
-  color: #469;
-  padding: 5px;
-}
-
-.dl_a_6 {
-  background: #F0F0F0;
-  border-color: #DDD;
-  color: #888;
-  padding: 5px;
-}
-
-.dl_b_6 {
-  background: #F0F0F0;
-  border-color: #DDD;
-  color: #888;
-  padding: 5px;
-}
-
-.mod_roadmap_titlebar {
-  font-weight: bold;
-  border-top: 1px solid #B4B4B4;
-  border-bottom: 1px solid #B4B4B4;
-  background-color: #EAEAEA;
-  padding: 5px;
-}
-
-.mod_roadmap_topheader {
-  background-color: #B4B4B4;
-  color: #FFF;
-  padding: 4px;
-}
-
-/*________________________ Модуль "Голосование" ________________________*/
-.mod_poll_title {
-  color: #999;
-}
-
-.mod_poll_table {
-  background: #DEDEDE;
-  height: 9px;
-}
-
-.mod_poll_comments {
-  border: 1px solid #DEDEDE;
-  margin: 5px;
-  padding: 5px;
-}
-
-.mod_pollbox {
-  padding: 5px;
-  background-color: #F5F5F5;
-  border: 1px solid #DDD;
-}
-
-.mod_pollbox P {
-  padding: 0 0 5px;
-  margin: 0 0 5px;
-}
-
-.mod_poll_first {
-  background-color: #FFF;
-}
-
-.mod_poll_second {
-  background-color: #EAEAEA;
-}
 
 /*________________________ Модуль "Гостевая книга" ________________________*/
 #guest_pop {
@@ -873,36 +633,6 @@ TABLE.progress TD :hover {
   padding: 8px;
 }
 
-.box_inner {
-  background-color: #FFF;
-}
-
-.box_innerhead {
-  background: #E7E7E7 url(../modules/guestbook/images/box_innerhead.gif);
-  padding: 5px;
-  border-bottom: 0px solid #D7D7D7;
-  font-weight: bold;
-  position: relative;
-}
-
-.commBodyTable {
-  border: 1px dotted #B5B5B5;
-}
-
-.commNameTd, .commDateTd {
-  border-bottom: 1px dotted #B5B5B5;
-  background: #F4F4F4;
-}
-
-.commName {
-  color: #6E6E6E;
-}
-
-.commNumTd {
-  border-bottom: 1px dotted #B5B5B5;
-  background: #F4F4F4;
-  color: #EC3D2B;
-}
 
 .mini {
   color: #333;
@@ -1156,8 +886,6 @@ TABLE.progress TD :hover {
   border: 1px solid #CCC5AF;
 }
 
-
-
 .tablemenu {
   height: 38px;
 }
@@ -1189,7 +917,7 @@ TABLE.progress TD :hover {
 #btn {
   display: inline;
   position: relative;
-  text-align: rigth;
+  text-align: right;
   float: right;
 }
 
@@ -1203,14 +931,27 @@ TABLE.progress TD :hover {
     background-color: #eeeeee;
     height: 100%;
     a {
-      margin: auto 0;
-      vertical-align: baseline;
-      img {
-        float: left;
-        max-height: 100px;
+      span {
+        line-height: 100px;
       }
+
+      .crop {
+        width: 72px;
+        height: 100px;
+        overflow: hidden;
+        float: left;
+        img {
+          max-height: 100px;
+        }
+      }
+
     }
 
   }
+}
+
+.file-link {
+  display: block;
+  clear: left;
 }
 

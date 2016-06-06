@@ -11,9 +11,9 @@ collection: rj
     {% for rj in site.rj | sort:position %}
     <div class="rj">
         <a href="{{rj.url}}">
-            <img src="{{rj.picture}}" alt="{{rj.link}}">
+            <div class="crop"><img src="{{rj.picture}}" alt="{{rj.link}}"></div>
 
-            {{ rj.title }}
+            <span>{{ rj.title }}</span>
         </a>
     </div>
     {% endfor %}

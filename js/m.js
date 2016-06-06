@@ -3,7 +3,7 @@ var sec;
 var IntervalID;
 var timer;
 $(document).ready(function () {
-    initTimer();
+    // initTimer();
 });
 
 $("a.soc").each(function () {
