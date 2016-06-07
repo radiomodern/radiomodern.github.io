@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Модерн - больше, чем просто радио!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://radiomodern.ru # the base hostname & protocol for your site
+enforce_ssl: radiomodern.ru
 twitter_username: radiomodern
 github_username:  radiomodern
 
