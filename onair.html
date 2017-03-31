@@ -10,8 +10,28 @@ collection: onair
 
 <em>Тестовое вещание</em><br>
 <br>
-<embed height="400" width="550" menu="true" loop="true" play="true" src="/radiomodern.swf"
-       pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"><br>
+
+<div id="player">
+
+    <div class="controls">
+        <div class="play" id="play"></div>
+        <div class="pause" id="pause"></div>
+        <div id="volume">
+            <div class="volume"></div>
+        </div>
+    </div>
+
+    <audio autobuffer id="sources">
+        <source src="http://radio.sampo.ru/modern.m3u"/>
+        <source src="http://radio.karelia.pro:8000/modernradio"/>
+        <source src="http://radio.karelia.pro:8000/modern.aac"/>
+    </audio>
+
+</div>
+
+<script type="text/javascript" src="/js/player.js"></script>
+
+<br>
     <br>
     <a href="http://radio.sampo.ru/modern.m3u">послушать в аудиоплеере</a><br>
     <br>
@@ -29,3 +49,4 @@ collection: onair
     <br>
     В Архангельске и Северодвинске по внутресетевому траффику <a
             href="http://radio-local.simvoludachi.ru:8000/radiomodern.m3u">слушать тут</a><br>
+

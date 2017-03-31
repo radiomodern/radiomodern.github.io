@@ -1,0 +1,49 @@
+#player {
+  display: block;
+  width: 550px;
+  height: 400px;
+  background: #5c1202 url('/images/player.png') center no-repeat;
+  background-size: cover;
+
+  .controls {
+    display: block;
+    position: relative;
+    left: 200px;
+    top: 195px;
+    width: 150px;
+  }
+
+  .play {
+    float: left;
+    display: block;
+    background: url('/images/player-controls.png');
+    background-position: -40px 0px;
+    width: 23px;
+    height: 25px;
+  }
+
+  .pause {
+    float: left;
+    display: none;
+    background: url('/images/player-controls.png');
+    background-position: -7px 2px;
+    width: 23px;
+    height: 25px;
+  }
+
+  #volume {
+    position: relative;
+    display: block;
+    float: left;
+    width: 125px;
+    height: 25px;
+  }
+
+  .volume{
+    background: url('/images/player-controls.png') no-repeat;
+    background-position: 0px -20px;
+    display: block;
+    width: 125px;
+    height: 25px;
+  }
+}
