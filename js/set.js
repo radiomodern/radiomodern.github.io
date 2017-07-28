@@ -1,0 +1,1 @@
+localStorage.d="123";
