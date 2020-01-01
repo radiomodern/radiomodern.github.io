@@ -31,13 +31,9 @@ function playerStart() {
 }
 
 function playerPause(){
-    var promse = audio.pause();
-    if (promise !== undefined) {
-        promise.then(_ => {
-             pause.style.display = 'none';
-             play.style.display = 'block';
-        });
-    }
+    audio.pause();
+    pause.style.display = 'none';
+    play.style.display = 'block';
 }
 
 function changeVolume(e){
