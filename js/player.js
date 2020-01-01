@@ -16,18 +16,28 @@ function initPlayer() {
         audio.volume = volObj.vol;
         volume.style.width = volObj.off + 'px';
     }
+    playerStart();
 }
 
 function playerStart() {
-    audio.play();
-    play.style.display = 'none';
-    pause.style.display = 'block';
+    var promise = audio.play();
+    
+    if (promise !== undefined) {
+        promise.then(_ => {
+            play.style.display = 'none';
+            pause.style.display = 'block';
+        });
+    }
 }
 
 function playerPause(){
-    audio.pause();
-    pause.style.display = 'none';
-    play.style.display = 'block';
+    var promse = audio.pause();
+    if (promise !== undefined) {
+        promise.then(_ => {
+             pause.style.display = 'none';
+             play.style.display = 'block';
+        });
+    }
 }
 
 function changeVolume(e){
