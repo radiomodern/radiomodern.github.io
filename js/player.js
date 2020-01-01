@@ -16,6 +16,7 @@ function initPlayer() {
         audio.volume = volObj.vol;
         volume.style.width = volObj.off + 'px';
     }
+    playerStart();
 }
 
 function playerStart() {
